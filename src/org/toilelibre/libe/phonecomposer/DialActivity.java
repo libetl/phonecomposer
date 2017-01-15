@@ -1,12 +1,5 @@
 package org.toilelibre.libe.phonecomposer;
 
-import java.util.Locale;
-
-import org.toilelibre.libe.phonecomposer.code.ExitCode;
-import org.toilelibre.libe.phonecomposer.fragment.DialDialogFragment;
-import org.toilelibre.libe.phonecomposer.thread.DialThread;
-import org.toilelibre.libe.phonecomposer.thread.OnThreadCompleteListener;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.DialogFragment;
@@ -16,6 +9,13 @@ import android.content.Context;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+
+import org.toilelibre.libe.phonecomposer.code.ExitCode;
+import org.toilelibre.libe.phonecomposer.fragment.DialDialogFragment;
+import org.toilelibre.libe.phonecomposer.thread.DialThread;
+import org.toilelibre.libe.phonecomposer.thread.OnThreadCompleteListener;
+
+import java.util.Locale;
 
 public class DialActivity extends Activity {
 

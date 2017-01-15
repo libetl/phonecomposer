@@ -1,16 +1,13 @@
 package org.toilelibre.libe.phonecomposer.code;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 public class DTMFCode {
 
 	public static final Map<Character, int []> FREQUENCIES =
-			new HashMap<Character, int []>(){/**
-				 * 
-				 */
-				private static final long serialVersionUID = 3756043814874429261L;
-
+			Collections.unmodifiableMap(new HashMap<Character, int []>(){
 			{
 				this.put('0', new int [] {941,1336});
 				this.put('1', new int [] {697,1209});
@@ -29,5 +26,5 @@ public class DTMFCode {
 				this.put('B', new int [] {941,1633});
 				this.put('C', new int [] {852,1633});
 				this.put('D', new int [] {941,1633});
-			}};
+			}});
 }

@@ -1,14 +1,11 @@
 package org.toilelibre.libe.phonecomposer;
 
-import java.util.LinkedList;
-import java.util.List;
-
+import android.app.Activity;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.BaseTypes;
-import android.app.Activity;
-import android.database.Cursor;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -21,6 +18,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class ComposeNow extends Activity {
 	private List<String> phoneTypes;
 	private List<String> phoneNumbers;
@@ -31,9 +31,9 @@ public class ComposeNow extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.phoneTypes = new LinkedList<String>();
-		this.phoneNumbers = new LinkedList<String>();
-		this.listViewValues = new LinkedList<String>();
+		this.phoneTypes = new LinkedList<>();
+		this.phoneNumbers = new LinkedList<>();
+		this.listViewValues = new LinkedList<>();
 		this.setContentView(R.layout.activity_compose_now);
 		Log.i(ComposeNow.class.getName(),
 				"Landed in ComposeNow Activity - PhoneComposer");

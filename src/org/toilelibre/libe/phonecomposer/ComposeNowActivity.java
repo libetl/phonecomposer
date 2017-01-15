@@ -1,8 +1,8 @@
 package org.toilelibre.libe.phonecomposer;
 
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 
 public class ComposeNowActivity extends Activity {
@@ -13,7 +13,6 @@ public class ComposeNowActivity extends Activity {
 		this.setContentView(R.layout.activity_compose_now);
 		super.onCreate(savedInstanceState);
 
-		BuildContactDisplay.build (this);
 	}
 
 	@Override

@@ -1,8 +1,5 @@
 package org.toilelibre.libe.phonecomposer.fragment;
 
-import org.toilelibre.libe.phonecomposer.DialActivity;
-import org.toilelibre.libe.phonecomposer.R;
-
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +9,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.toilelibre.libe.phonecomposer.DialActivity;
+import org.toilelibre.libe.phonecomposer.R;
+
 public class DialDialogFragment extends DialogFragment {
-	int mNum;
 
 	/**
 	 * Create a new instance of MyDialogFragment, providing "num" as an

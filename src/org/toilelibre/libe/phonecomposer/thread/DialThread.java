@@ -1,13 +1,13 @@
 package org.toilelibre.libe.phonecomposer.thread;
 
 
-import java.nio.ByteBuffer;
-import java.util.Arrays;
+import android.util.Log;
 
 import org.toilelibre.libe.phonecomposer.DialActivity;
 import org.toilelibre.libe.phonecomposer.code.DTMFCode;
 
-import android.util.Log;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 public class DialThread extends Thread {
 	
